@@ -1,6 +1,9 @@
-# 7.0.3
+# Head
 
 - Added: `selector-pseudo-class-whitelist` rule.
+
+# 7.0.3
+
 - Fixed: bug causing rules in extended configs to be merged with, rather than replaced by, the extending config.
 - Fixed: `selector-class-pattern` now ignores fractional keyframes selectors.
 - Fixed: `selector-max-specificity` now ignores selectors containing the `matches()` pseudo-class, and warns if the underlying `specificity` module cannot parse the selector.
