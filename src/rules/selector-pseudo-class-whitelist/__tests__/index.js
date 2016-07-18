@@ -35,6 +35,8 @@ testRule(rule, {
     code: "a:nth-child(5)::before {}",
   }, {
     code: "a:-moz-placeholder {}",
+  }, {
+    code: "a:-MOZ-PLACEholder {}",
   } ],
 
   reject: [ {
@@ -55,6 +57,11 @@ testRule(rule, {
   }, {
     code: "input:-ms-input-placeholder {}",
     message: messages.rejected("-ms-input-placeholder"),
+    line: 1,
+    column: 6,
+  }, {
+    code: "input:-Ms-INPUT-placeholder {}",
+    message: messages.rejected("-Ms-INPUT-placeholder"),
     line: 1,
     column: 6,
   } ],
